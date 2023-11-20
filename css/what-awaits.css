@@ -1,0 +1,66 @@
+.main__what-awaits {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.what-awaits__title {
+    display: flex;
+    padding-top: 76px;
+    padding-bottom: 24px;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    gap: 24px;
+    background: var(--day-base-base-02, #F6F7F8);
+}
+.what-awaits__title-txt {
+    width: 912px;
+    color: var(--day-text-text-01, rgba(0, 0, 0, 0.80));
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px; /* 109.091% */
+}
+.what-awaits__opportunities {
+    display: flex;
+    padding: 24px 128px;
+    align-items: flex-start;
+    gap: 48px;
+}
+.opportunity {
+    display: flex;
+    width: 336px;
+    height: 232px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 24px;
+    background: var(--day-base-base-01, #FFF);
+}
+.opportunity__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+.opportunity__text-title {
+    align-self: stretch;
+    color: var(--day-text-text-01, rgba(0, 0, 0, 0.80));
+    font-feature-settings: 'liga' off;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 116.667% */
+}
+.opportunity__text-txt {
+    align-self: stretch;
+    color: var(--day-text-text-01, rgba(0, 0, 0, 0.80));
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+}
