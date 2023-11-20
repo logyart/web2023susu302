@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --day-base-elevation-01: #000000;
+    --day-base-base-01: #FFF;
+    --day-base-base-02: #F6F7F8;
+    --day-base-base-08: #333;
+    --day-text-text-01: #000000CC;
+    --day-text-text-02: #0000008A;
+    --day-text-link: #336FEE;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--day-base-base-02);
+}
