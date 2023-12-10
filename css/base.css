@@ -1,0 +1,48 @@
+:root{
+    --bg-color: #faf5f5;
+    --text-color: #1c1b1b;
+    --container-bg-color: #d1d1cf;
+    --post-bg-color: #b8b5b4;
+    --post-hover-bg-color: #828282;
+}
+
+.dark-theme{
+    --bg-color: #262626;
+    --text-color: #e3e1d9;
+    --container-bg-color: #696968;
+    --post-bg-color: #4a4a4a;
+    --post-hover-bg-color: #575757;
+}
+
+
+/* Общие стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+button{
+    border: 0;
+    font-size: 16px;
+}
+button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* Стили для лоадера */
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    display: none; /* Начально скрыт */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

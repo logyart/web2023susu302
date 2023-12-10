@@ -1,0 +1,12 @@
+footer {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background: var(--container-bg-color);
+}
+.footer__author {
+    color: var(--text-color);
+}

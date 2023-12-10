@@ -1,0 +1,82 @@
+.posts {
+    text-align: center;
+    width: 85%;
+    margin: 20px auto;
+    background-color: var(--container-bg-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+
+.posts-list, .important-posts-list {
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
+    text-align: left;
+}
+
+.post-title{
+    display: flex;
+    align-self: center;
+}
+
+
+/* Стили для постов */
+.post {
+    display: flex;
+    order: 0;
+    flex-direction: column;
+    background-color: var(--post-bg-color);
+    border-radius: 15px;
+    width: 350px;
+    height: 350px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+.post-user-name, .post-title, .post-body, .add-important-btn, .remove-important-btn {
+    display: flex;
+    order: 2;
+}
+
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+
+.btns-box{
+    display: flex;
+    order: 1;
+    margin-left: auto;
+    background-color: #fff;
+}
+.add-important-btn, .remove-important-btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-self: center;
+    margin-top: auto;
+
+}
+.add-important-btn {
+    background-color: #336FEE;
+    color: white;
+    
+}
+.remove-important-btn {
+    background-color: #221f1f;
+    color: white;
+}
+.edit-btn, .delete-btn {
+    background-color: var(--post-bg-color);
+}
+.edit-btn {
+    color: var(--text-color)
+}
+
+
