@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>TODO list</title>
+</head>
+<body>
+    <header>
+        <button id="openCreatePostModal">New TO DO</button>
+        <a class="header__title" href=""><h1>TO DO</h1></a>
+        <button id="toggleThemeBtn">🌙</button>        
+    </header>
+
+    <main>
+        <div class="posts">
+            <h2 class="post-title">Important:</h2>
+            <div class="important-posts-list">
+                <!-- Здесь будут отображаться важные посты -->
+            </div>
+        
+            <h2 class="post-title">Other:</h2>
+            <div class="posts-list">
+                <!-- Здесь будут отображаться посты -->
+            </div>
+        
+            <!-- Лоадер -->
+            <div id="loader" class="loader"></div>
+        </div>
+        
+        <!-- Модальное окно для создания/редактирования поста -->
+        <div id="postModal" class="modal">
+            <div class="modal-content">
+                <span  id="closePostModal" class="close">&times;</span>
+                <h2>TO DO</h2>
+                <form id="postForm">
+                    <!-- Форма для создания/редактирования поста -->
+                    <label for="userNameSelect">User:</label>
+                    <select id="userNameSelect"></select><br><br>
+                    <label for="postTitle">Title:</label>
+                    <input type="text" id="postTitle" name="postTitle" required><br><br>
+        
+                    <label for="postContent">Description:</label>
+                    <textarea id="postContent" name="postContent" rows="4" required></textarea><br><br>
+        
+                    <button id="savePostBtn">Save</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Модальное окно подтверждения удаления -->
+        <div id="confirmModal" class="modal">
+            <div class="modal-content">
+                <span id="closeConfirmModal" class="close">&times;</span>
+                <h2>Confirm the deletion</h2>
+                <p>Are you sure you want delete this to-do?</p>
+                <div class="confirm-buttons">
+                    <button id="confirmDeleteBtn">Yes</button>
+                    <button id="cancelDeleteBtn">No</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <span class="footer__author">Барбаров Денис</span>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
